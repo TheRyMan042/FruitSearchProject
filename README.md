@@ -1,0 +1,3 @@
+# Unit 15: The Fruit Search Engine Autocomplete Project
+
+The main goal of this project was to make a search engine that finds a particular fruit based on the users keywords and show some suggestions onscreen using a dropdown menu. I had to use everything that I've learned from this point, like some array methods, some dom manipulating, destructuring, and more, to make this work. Search for any fruit to your heart's content.
