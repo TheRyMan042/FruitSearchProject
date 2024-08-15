@@ -1,0 +1,82 @@
+/*
+Ryan Hutchings
+Unit 15: Fruit Search Bar Project
+*/
+
+* {
+  box-sizing: border-box;
+  /*contains the smaller sizes of different boxes from the main box*/
+  font-family: Nunito, 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+}
+
+html {
+  height: 100%;
+  /*helps display linear gradient with no repeating pattern and positioning the search container*/
+
+  /*Centers the search bar*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background: linear-gradient(to left, aqua 20%, rgb(114, 255, 114));
+  /*Sets the background color of the page*/
+}
+
+
+input:focus {
+  outline-color: rgb(255, 155, 172);
+  /*changes the outline's color when focused*/
+}
+
+
+.search-container input,
+.search-container .suggestions {
+  width: 23rem;
+  /*sets a width size for the search bar and dropdown menu*/
+}
+
+.search-container input {
+  height: 3rem;
+  /*sets a height size for the dropdown menu*/
+
+  /*Create a separator for dropdown and search bar*/
+  border-width: 0px 0px 2px 0px;
+  border-color: gray;
+  border-style: solid;
+
+  /*background for the search bar*/
+  background-color: rgba(255, 255, 255, 0.50);
+}
+
+.search-container .suggestions {
+  /*keeps the dropdown menu from moving the search bar*/
+  position: absolute;
+}
+
+
+ul {
+  list-style-type: none;
+  /*removes the bullet points*/
+  /*remove the ul's spacing*/
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  /*centers the height of the text*/
+  padding: 0 0 0 16px;
+  /*space of word from the left edge*/
+  height: 50.4px;
+  /*li's height size */
+}
+
+/*appears when the dropdown menu is filled with words*/
+.dropdownAppearance {
+  /*background for the dropdown menu*/
+  background-color: rgba(255, 255, 255, 0.50);
+}
